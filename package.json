@@ -1,7 +1,6 @@
 {
   "name": "webspeechapi",
   "version": "1.0.0",
-  "description": "",
   "main": "webSpeechAPI.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.2.3"
-  }
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShuneLaeMay/text-controller_WebSpeechAPI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShuneLaeMay/text-controller_WebSpeechAPI/issues"
+  },
+  "homepage": "https://github.com/ShuneLaeMay/text-controller_WebSpeechAPI#readme",
+  "description": ""
 }
