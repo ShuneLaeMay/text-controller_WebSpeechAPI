@@ -21,7 +21,7 @@
 //     }
 // }); 
  
-//resize
+//resize (event)
 // window.addEventListener("resize", () => {
 //     console.log("this is resize");
 // })
@@ -66,14 +66,80 @@ const run = () => {
 //clearInterval
 const clockStart = document.querySelector("#clockStart");
 const clockEnd = document.querySelector("#clockEnd");
-let runClock;
+// let runClock;
 // const stopRunClock = clearInterval(runClock);
-clockStart.addEventListener("click",() => {
-    runClock = setInterval(run,1000);
+// clockStart.addEventListener("click",() => {
+//     runClock = setInterval(run,1000);
+// })
+// clockEnd.addEventListener("click",() => {
+//     clearInterval(runClock);
+// })
+
+// let clT;
+
+// clockStart.addEventListener("click" , () => {
+//     clT = setTimeout( () => console.log("hello"),1000);
+// })
+// clockEnd.addEventListener("click" , () => {
+//      clearTimeout(clT);   
+// })
+
+//one seconds long time add one(use setInterval)
+
+//  let i = 0;
+// // setInterval(()=>{console.log("Coin",++i)},1000);
+// const runInter = setInterval(() => {
+//     console.log("hello" ,++i);
+//     if(i===10){
+//         clearInterval(runInter);
+//     }
+// },1000);
+
+// function test(start,stop){
+    
+//  let i = start;
+//  // setInterval(()=>{console.log("Coin",++i)},1000);
+//  const runInter = setInterval(() => {
+//      console.log("hello" ,++i);
+//      if(i===stop){
+//          clearInterval(runInter);
+//      }
+//  },1000);
+ 
+// }
+
+//open() (Methods)
+// clockStart.addEventListener("click" , () => {
+//     open("https://mms-it.com")
+// })
+// clockStart.addEventListener("click" , () => {
+//     const windowFeatures = "left=100,top=100,width=320,height=320";
+// const handle = window.open(
+//   "https://mms-it.com",
+//   "mozillaWindow",
+//   windowFeatures
+// );
+    
+// })
+
+//close() 
+// clockEnd.addEventListener("click" , () => {
+//     close();
+// })
+
+//resizeTo() 
+// resizeTo(200,200);
+
+//scrollTo() 
+// clockStart.addEventListener("click" , () => {
+//     scrollTo(0,1500);
+// })
+clockStart.addEventListener("click" , () => {
+    scrollTo(0,document.querySelector("#to").getBoundingClientRect().y);
 })
-clockEnd.addEventListener("click",() => {
-    clearInterval(runClock);
-})
+
+
+
 
 
 
